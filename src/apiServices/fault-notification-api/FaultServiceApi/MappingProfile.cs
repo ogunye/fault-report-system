@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Entities.Models;
-using Shared.DataTransferObjects;
+using Shared.DataTransferObject;
 
 namespace FaultServiceApi
 {
@@ -9,9 +9,9 @@ namespace FaultServiceApi
         public MappingProfile()
         {
             //Source -> Destination
-            CreateMap<Fault, FaultReadDto>();
-            CreateMap<FaultCreateDto, Fault>();
-            CreateMap<FaultUpdateDto, Fault>();
+            CreateMap<Fault, FaultForReadDto>();
+            CreateMap<FaultForCreationDto, Fault>();
+            CreateMap<FaultForUpdateDto, Fault>();
         }
     }
 }

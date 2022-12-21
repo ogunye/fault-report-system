@@ -1,13 +1,8 @@
 ﻿using AutoMapper;
 using Contracts;
-using Entities.DataTranferObjects;
 using Entities.Models;
 using Service.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Shared.DataTransferObject;
 
 namespace Service
 {
