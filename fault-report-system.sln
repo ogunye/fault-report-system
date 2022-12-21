@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B351C003-B9E9-4B02-AFC5-9839E57790B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apiServices", "apiServices", "{B695A268-E2BD-49B4-8B18-974BA6364ABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fault-notification-api", "fault-notification-api", "{2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "job-card-api", "job-card-api", "{5FAF0672-35BB-40AD-89B3-AC07987B4838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaultServiceApi", "src\apiServices\fault-notification-api\FaultServiceApi\FaultServiceApi.csproj", "{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B695A268-E2BD-49B4-8B18-974BA6364ABE} = {B351C003-B9E9-4B02-AFC5-9839E57790B7}
+		{2FC9567B-FA06-4A98-8332-84A3FD6AAB7D} = {B695A268-E2BD-49B4-8B18-974BA6364ABE}
+		{5FAF0672-35BB-40AD-89B3-AC07987B4838} = {B695A268-E2BD-49B4-8B18-974BA6364ABE}
+		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {052BC28E-48B7-4FE6-9183-B4D9BD8C6775}
+	EndGlobalSection
+EndGlobal
