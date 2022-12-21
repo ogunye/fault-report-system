@@ -1,16 +1,16 @@
-using FaultServiceApi.Data;
-using FaultServiceApi.Repository;
-using Microsoft.EntityFrameworkCore;
+using FaultServiceApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-ConfigurationManager configuration = builder.Configuration;
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-options.UseSqlServer(configuration.GetConnectionString("sqlConnection")));
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddScoped<IFaultRepository, FaultRepository>();    
+builder.Services.ConfigureCors();
+builder.Services.ConfigureIISIntegration();
+builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureRepositoryWapper();
+builder.Services.ConfigureServiceManager();
+builder.Services.ConfigureSqlContext(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

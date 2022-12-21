@@ -11,7 +11,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fault-notification-api", "f
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "job-card-api", "job-card-api", "{5FAF0672-35BB-40AD-89B3-AC07987B4838}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaultServiceApi", "src\apiServices\fault-notification-api\FaultServiceApi\FaultServiceApi.csproj", "{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaultServiceApi", "src\apiServices\fault-notification-api\FaultServiceApi\FaultServiceApi.csproj", "{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "src\apiServices\fault-notification-api\Entities\Entities.csproj", "{A825444A-92D1-4E26-AE6A-277920E1211D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\apiServices\fault-notification-api\Contracts\Contracts.csproj", "{A3CE101B-FCF4-4D34-9C29-DB67C3DC5BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "src\apiServices\fault-notification-api\Repositories\Repositories.csproj", "{1844BF83-72D2-4C6A-A128-6C9B91720817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "src\apiServices\fault-notification-api\LoggerService\LoggerService.csproj", "{C54CB1CE-F665-4BAA-B2E9-0B3305D50C8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3EC49331-6033-440C-8D37-B178135E887E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Contracts", "src\apiServices\fault-notification-api\Service.Contracts\Service.Contracts.csproj", "{8F4B5991-EBD0-401D-A72D-114AD302FB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "src\apiServices\fault-notification-api\Service\Service.csproj", "{B0FDC7AF-C3FC-4307-A2E2-2B0FABF3350C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\apiServices\fault-notification-api\Shared\Shared.csproj", "{3C07AAE6-461E-459D-8880-47E6688733AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +42,34 @@ Global
 		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A825444A-92D1-4E26-AE6A-277920E1211D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A825444A-92D1-4E26-AE6A-277920E1211D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A825444A-92D1-4E26-AE6A-277920E1211D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A825444A-92D1-4E26-AE6A-277920E1211D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CE101B-FCF4-4D34-9C29-DB67C3DC5BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CE101B-FCF4-4D34-9C29-DB67C3DC5BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CE101B-FCF4-4D34-9C29-DB67C3DC5BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CE101B-FCF4-4D34-9C29-DB67C3DC5BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1844BF83-72D2-4C6A-A128-6C9B91720817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1844BF83-72D2-4C6A-A128-6C9B91720817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1844BF83-72D2-4C6A-A128-6C9B91720817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1844BF83-72D2-4C6A-A128-6C9B91720817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54CB1CE-F665-4BAA-B2E9-0B3305D50C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54CB1CE-F665-4BAA-B2E9-0B3305D50C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54CB1CE-F665-4BAA-B2E9-0B3305D50C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54CB1CE-F665-4BAA-B2E9-0B3305D50C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4B5991-EBD0-401D-A72D-114AD302FB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4B5991-EBD0-401D-A72D-114AD302FB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4B5991-EBD0-401D-A72D-114AD302FB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4B5991-EBD0-401D-A72D-114AD302FB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FDC7AF-C3FC-4307-A2E2-2B0FABF3350C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FDC7AF-C3FC-4307-A2E2-2B0FABF3350C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FDC7AF-C3FC-4307-A2E2-2B0FABF3350C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FDC7AF-C3FC-4307-A2E2-2B0FABF3350C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C07AAE6-461E-459D-8880-47E6688733AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C07AAE6-461E-459D-8880-47E6688733AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C07AAE6-461E-459D-8880-47E6688733AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C07AAE6-461E-459D-8880-47E6688733AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +79,13 @@ Global
 		{2FC9567B-FA06-4A98-8332-84A3FD6AAB7D} = {B695A268-E2BD-49B4-8B18-974BA6364ABE}
 		{5FAF0672-35BB-40AD-89B3-AC07987B4838} = {B695A268-E2BD-49B4-8B18-974BA6364ABE}
 		{AEAA8C78-E6BC-40F7-833E-9C6B9A856C64} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+		{A825444A-92D1-4E26-AE6A-277920E1211D} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+		{A3CE101B-FCF4-4D34-9C29-DB67C3DC5BC6} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+		{1844BF83-72D2-4C6A-A128-6C9B91720817} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+		{C54CB1CE-F665-4BAA-B2E9-0B3305D50C8C} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+		{8F4B5991-EBD0-401D-A72D-114AD302FB43} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+		{B0FDC7AF-C3FC-4307-A2E2-2B0FABF3350C} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
+		{3C07AAE6-461E-459D-8880-47E6688733AF} = {2FC9567B-FA06-4A98-8332-84A3FD6AAB7D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {052BC28E-48B7-4FE6-9183-B4D9BD8C6775}

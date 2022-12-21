@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using FaultServiceApi.Models;
-using FaultServiceApi.Models.DataTransferObjects;
+using Entities.Models;
+using Shared.DataTransferObjects;
 
 namespace FaultServiceApi
 {
